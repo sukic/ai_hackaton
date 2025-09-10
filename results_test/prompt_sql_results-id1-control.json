@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "operations": ["join", "aggregate", "filter_fact","filter_dim"],
+        "duration": 1
+    },
+    "prompt":
+        {
+            "prompt_text": "",
+            "prompt_type": "control"
+        },
+    "results": 
+        {
+            "sql": "",
+            "data": [
+                {
+                    "obec.nazev": "Davle",
+                    "value": "2500"
+                },
+                {
+                    "obec.nazev": "Litomyšl",
+                    "value": "10000"
+                }
+            ]   
+        }
+    }

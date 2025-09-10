@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "operations": ["join", "aggregate", "filter_fact","filter_dim"],
+        "duration": 2.5
+    },
+    "prompt":
+        {
+            "prompt_text": "Retrieve the count of branches grouped by municipality. The output should contain two columns: municipality and branch_count.",
+            "prompt_type": "technical"
+        },
+    "results": 
+        {
+            "sql": "",
+            "data": [
+                {
+                    "obec.nazev": "Davle",
+                    "value": "2500"
+                },
+                {
+                    "obec.nazev": "Litomyšl",
+                    "value": "10000"
+                }
+            ]   
+        }
+    }

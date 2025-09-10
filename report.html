@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>AI Hackaton - Datachatbot - Validace</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;  /* omezíme celou stránku */
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+header img {
+    height: 80px;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 30px;
+}
+h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+canvas {
+    max-width: 100%;   /* graf se přizpůsobí šířce kontejneru */
+    height: 300px;     /* zmenšená výška */
+}
+</style>
+</head>
+<body>
+<header>
+    <img src="logo_cm.png" alt="Logo">
+    <h1>AI Hackaton - Datachatbot - Validace</h1>
+</header>
+
+<section>
+<h2>Textové shrnutí</h2>
+<p><b>Celková úspěšnost:</b> 100.00% (4/4)</p>
+<p><b>Průměrná doba běhu AI:</b> 99.500 ms</p>
+<p><b>Průměrná doba běhu Control:</b> 99.500 ms</p>
+
+<p><b>Celkova úspěšnost (summary):</b> Systém dosáhl výjimečné úspěšnosti s 100% správně zpracovanými dotazy.</p>
+<p><b>Datová shoda:</b> Úroveň datové shody je rovněž perfektní, což naznačuje, že všechny výstupy odpovídají očekávaným výsledkům.</p>
+<p><b>Silné a slabé stránky:</b> Silnou stránkou systému je jeho schopnost přesně odpovídat na různé typy dotazů (analytické, obchodní, technické, základní). Slabé stránky nemusí být patrné, avšak potenciálním rizikem může být absence variabilních výsledků, které by testovaly robustnost systému.</p>
+<p><b>Doporučení:</b> Doporučuje se provést další testování s širším příkladem dat a delšími dotazy, aby se ověřila odolnost systému v různých scénářích.</p>
+</section>
+
+<section>
+<h2>Kategorie úspěšnosti</h2>
+<canvas id="categoriesChart"></canvas>
+<script>
+const ctx = document.getElementById('categoriesChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['analytical', 'business', 'technical', 'basic'],
+        datasets: [{
+            label: 'Úspěšnost po kategoriích',
+            data: [1.0, 1.0, 1.0, 1.0],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 1
+            }
+        }
+    }
+});
+</script>
+</section>
+
+<section>
+<h2>Datová shoda</h2>
+<p><b>Průměrná datová shoda:</b> 100.00%</p>
+
+<h3>Top 5 nejlepší</h3>
+<table>
+<tr><th>ID</th><th>Skóre (%)</th></tr>
+<tr><td>id1-analytical</td><td>100.0</td></tr><tr><td>id1-business</td><td>100.0</td></tr><tr><td>id1-technical</td><td>100.0</td></tr><tr><td>id1-basic</td><td>100.0</td></tr>
+</table>
+
+<h3>Top 5 nejhorší</h3>
+<table>
+<tr><th>ID</th><th>Skóre (%)</th></tr>
+<tr><td>id1-analytical</td><td>100.0</td></tr><tr><td>id1-business</td><td>100.0</td></tr><tr><td>id1-technical</td><td>100.0</td></tr><tr><td>id1-basic</td><td>100.0</td></tr>
+</table>
+
+<h3>Chybné ID (mismatch)</h3>
+<ul>
+
+</ul>
+</section>
+
+</body>
+</html>

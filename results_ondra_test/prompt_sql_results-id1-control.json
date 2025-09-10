@@ -1,0 +1,1323 @@
+{
+  "meta": {
+    "operations": [],
+    "duration": 0.004303455352783203
+  },
+  "prompt": {
+    "prompt_text": "Retrieve the count of branches grouped by municipality. The output should contain two columns: municipality and branch_count.",
+    "prompt_type": "technical"
+  },
+  "results": {
+    "sql": "SELECT name_own AS municipality, COUNT(*) AS branch_count\nFROM all_branches_1\nGROUP BY name_own\nORDER BY branch_count DESC;",
+    "data": [
+      {
+        "municipality": "Coop Jednota",
+        "branch_count": 1360
+      },
+      {
+        "municipality": "Hruska",
+        "branch_count": 569
+      },
+      {
+        "municipality": "Penny Market",
+        "branch_count": 407
+      },
+      {
+        "municipality": "Coop TUTY",
+        "branch_count": 362
+      },
+      {
+        "municipality": "Albert",
+        "branch_count": 334
+      },
+      {
+        "municipality": "Billa",
+        "branch_count": 251
+      },
+      {
+        "municipality": "Lidl",
+        "branch_count": 250
+      },
+      {
+        "municipality": "Coop ",
+        "branch_count": 236
+      },
+      {
+        "municipality": "Tesco",
+        "branch_count": 185
+      },
+      {
+        "municipality": "Coop Konzum",
+        "branch_count": 173
+      },
+      {
+        "municipality": "Coop TIP",
+        "branch_count": 155
+      },
+      {
+        "municipality": "Kaufland",
+        "branch_count": 140
+      },
+      {
+        "municipality": "JIP",
+        "branch_count": 140
+      },
+      {
+        "municipality": "Zabka",
+        "branch_count": 126
+      },
+      {
+        "municipality": "Coop Tempo",
+        "branch_count": 93
+      },
+      {
+        "municipality": "Coop Trefa",
+        "branch_count": 31
+      },
+      {
+        "municipality": "Potraviny CZ",
+        "branch_count": 17
+      },
+      {
+        "municipality": "Coop DISKONT",
+        "branch_count": 17
+      },
+      {
+        "municipality": "Globus",
+        "branch_count": 14
+      },
+      {
+        "municipality": "Makro",
+        "branch_count": 13
+      },
+      {
+        "municipality": "Coop Terno",
+        "branch_count": 12
+      },
+      {
+        "municipality": "Potraviny",
+        "branch_count": 10
+      },
+      {
+        "municipality": "Lapek a.s.",
+        "branch_count": 6
+      },
+      {
+        "municipality": "Smíšené zboží",
+        "branch_count": 5
+      },
+      {
+        "municipality": "Minimarket",
+        "branch_count": 3
+      },
+      {
+        "municipality": "Jana Čtveráčková",
+        "branch_count": 2
+      },
+      {
+        "municipality": "Nákupní středisko Vladimíra Červová",
+        "branch_count": 2
+      },
+      {
+        "municipality": "Smíšené zboží U Hájků",
+        "branch_count": 2
+      },
+      {
+        "municipality": "Smíšené zboží Kysilková",
+        "branch_count": 2
+      },
+      {
+        "municipality": "Potraviny Petr Kroupa",
+        "branch_count": 2
+      },
+      {
+        "municipality": "Potraviny OR.89 s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Šach s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Zenáhlík",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Marie Polehlová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny U Kolářů s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny DUHA, Dagmar Kubištová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dolní Kralovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Strmilov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Hodonín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Třešť",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jihlava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Chýnov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Hluboká nad Vltavou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Benešov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nový Bor",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Vracov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Pyšel",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Brno - BYSTRC",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny U Davida",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Minimarket Bratčice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšenka u Anežky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Bernartice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Včelná",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Březnice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Písek",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Plzeň, Kaznějovská",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Dítko",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Hejkal",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Struhařov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Frýdek-Místek J. Trnky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Horní Planá",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Borovany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Slatiňany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Skuteč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Litoměřice - Pokratická",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Třinec - Nový Borek",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Hladíková",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Centrum Potraviny CZ",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny na Zatáčce",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Lipník",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží JV s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Štěpán",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Mini potraviny J&E Smrček J.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Hroděj s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Suchdol nad Lužnicí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dubá",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Sedlec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Pacov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Litoměřice Komenského",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Koloveč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny 29",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Večerka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží U Hanky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Křižanov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšenka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Turnov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Štěpánovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Znojmo",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Jansáku, s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Straka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Stříbrná Skalice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Smržovka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dubné",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Teplá",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dačice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Tišnov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Česká Lípa",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Tlumačov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Mladá Vožice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Přelouč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "ESO 2. Potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Prodejna JAWA",
+        "branch_count": 1
+      },
+      {
+        "municipality": "A.T.G. Centrum spol.s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Studená",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Horní Lideč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Holýšov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jablonné v Podještědí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Březí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Frýdek-Místek, Dobrovského",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Sehradice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Supermarket FLOP TOP Hrušovany nad Jevišovkou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Lomnice nad Lužnicí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Ždánice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "BRASSICA - PAP",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Sura",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Smilkov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Cukrárna- potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Želetava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Valter František",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Z.Vokoun",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Janáčová Sandra Ing.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jablonec nad Nisou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Mladá Boleslav",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Blovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Třinec - Lyžbice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Ořechovka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Sluníčko",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny CZ Hosín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Obecní obchod Lidmaň",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Bohunky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Kostků",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Jindrák",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Extra Třeboň",
+        "branch_count": 1
+      },
+      {
+        "municipality": "HD Potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Mirky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Hoanga",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Večerka U kina",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Merkur Třeboň",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Počátky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "FAGUS-smíšené zboží",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Konzum Dítko",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Obchodní dům Pavelec-prům. zboží",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Libor Bratršovský",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Radek Mol",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Chrudim",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Rudolfov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman České Velenice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žďár nad Sázavou, Dolní",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Nebahovy",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Prodejna Střed",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Weber MLÝN",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Phuong Quyen s.r.o",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Tony",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Prostějov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Mandík",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Pekárna Velíšek s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Čiperová Jaroslava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Frymburk",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Havlíčkův Brod, Havířská",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Sázava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Velká Bíteš",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nový Rychnov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nový Bydžov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Van Potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny PRIMA - PRIMAP s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Zámečník",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Třinec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dubňany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dvůr Králové",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny K+K",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Koloniál Katovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Prodejana potravin Mělčany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Stará Říše",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Minimarket H&H",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Marcela Herclíková - Maso - Uzeniny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny - Zbraslav",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Kolín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Plzeň, náměstí Republiky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Poběžovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Praha-Modřany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "BM Market",
+        "branch_count": 1
+      },
+      {
+        "municipality": "SENFT P+P",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Bělíková Miroslava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "V-Market",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Prodejna IVA",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny STAPEVA s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Třebíč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Bystřice nad Pernštejnem",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Odolena Voda",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nová Včelnice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Lidečko",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nové Hrady",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Volyně",
+        "branch_count": 1
+      },
+      {
+        "municipality": "HD potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Husinec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Konzum Hama market",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny - večerka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Zuzky",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Family Market",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Vyškov, Na Hraničkách",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Příšovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žirovnice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žandov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Vladimír Kónig",
+        "branch_count": 1
+      },
+      {
+        "municipality": "UNIPRO s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Dražice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jičín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nehvizdy",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Mnichovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Kunice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žacléř",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Nahodilová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Veselí nad Lužnicí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Velké Popovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Majka-Jana Pavelková",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Pavel Chábera",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Nápoje Výrosta",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Stráž pod Ralskem",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Sezimovo Ústí II.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Mukařov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Lhenice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jablonec nad Nisou Mánesova",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Pelhřimov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Flop Diskont Volyně",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Michaela Nováková",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny David",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Minimarket Petr Ostrý",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Fiala Vlastimil",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Kaňka",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Havlíčkův Brod Reynkova",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Český Brod",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman České Budějovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jevišovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Drogerie Flosman Jevišovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Luka nad Jihlavou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Lišov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "HT Expres",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Pravonín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Slunce",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Heřmanov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Krhanice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny - Smíšené zboží",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Tulešice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žlutava",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny a Pekárna Pohořelice s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Polná",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Kralupy nad Vltavou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Batelov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Netolice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Hradiště",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Večerka Loi Chu Van",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží u Hájků",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Lažiště - p.Hodina",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Skalický",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny u Myslivce",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Karásek Petr",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Příbram",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Uran",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Protivín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jindřichův Hradec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Kardašova Řečice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Karásek, Silvie Vodičková",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny RUBL s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Chalupa Jr.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny TRIO",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Horní Cerekev",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jevany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Sedlčany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Neveklov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží PELEGRIN",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Pelech",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Malý Zdeněk",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Štítary",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Čížová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Čechtice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Brno - Černá Pole",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Moravské Budějovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Mirotice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "TN Potraviny",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Zlata Štamfrová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny U Hřiště",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Šumavské Hoštice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Zárubnice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Raušer Miroslav",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Kourková Iva",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Supermarket VZOR, Hejný spol. s r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "DIPA s.r.o.",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny MARTA",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Kónig Vladimír",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Tábor",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Chlumec nad Cidlinou",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Chlum u Třeboně",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Litoměřice Stránského",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Český Těšín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Miřetice Polní 681",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Miřetice 17.listopadu",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Vimperk Weise",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Vyškov, Lípová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Zliv",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Votice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Zdice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Petra Pham",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Daily shop",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Mimimarket V podzámčí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží ZD Lukavec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Tauchman",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Temelín",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží - Anna Novotná",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nechanice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Žatec",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Jemnice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Nové Strašecí",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny pod kaštany",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšené zboží Strnadová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Vyskočil",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Trom",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Topolová",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Toni's Market",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Popovice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Smíšenka Branice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Soutice",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Holašovský koloniál",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Unispol Jana Dvořáková",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Pekárna",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Konzum Zaječov",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Telč",
+        "branch_count": 1
+      },
+      {
+        "municipality": "Potraviny Flosman Kaplice",
+        "branch_count": 1
+      }
+    ]
+  }
+}

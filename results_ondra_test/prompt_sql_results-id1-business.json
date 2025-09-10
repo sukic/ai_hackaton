@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "operations": [],
+    "duration": 0.005244016647338867
+  },
+  "prompt": {
+    "prompt_text": "Provide an overview of branch distribution across municipalities. List each municipality along with the number of branches operating there.",
+    "prompt_type": "business"
+  },
+  "results": {
+    "sql": "SELECT ob.nazev AS municipality, COUNT(ab.id) AS branch_count\nFROM all_branches_1 ab\nJOIN zsj_dwh_1 zsj ON ab.kod_zsj_d = zsj.kod_zsj\nJOIN obec_dwh_1 ob ON zsj.kod_obec = ob.kod_obec\nGROUP BY ob.nazev\nORDER BY branch_count DESC;",
+    "data": [
+      {
+        "name_own": "Coop Jednota",
+        "number_of_branches": 1360
+      }
+    ]
+  }
+}

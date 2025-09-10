@@ -1,0 +1,53 @@
+{
+  "total_prompts": 4,
+  "correct_total": 4,
+  "correct_percentage": 100.0,
+  "avg_ai_duration": 0.0995,
+  "avg_ctrl_duration": 0.0995,
+  "categories": {
+    "analytical": 1.0,
+    "business": 1.0,
+    "technical": 1.0,
+    "basic": 1.0
+  },
+  "data_match": {
+    "average_score": 100.0,
+    "top5_best": [
+      {
+        "id": "id1-analytical",
+        "score": 100.0
+      },
+      {
+        "id": "id1-business",
+        "score": 100.0
+      },
+      {
+        "id": "id1-technical",
+        "score": 100.0
+      },
+      {
+        "id": "id1-basic",
+        "score": 100.0
+      }
+    ],
+    "top5_worst": [
+      {
+        "id": "id1-analytical",
+        "score": 100.0
+      },
+      {
+        "id": "id1-business",
+        "score": 100.0
+      },
+      {
+        "id": "id1-technical",
+        "score": 100.0
+      },
+      {
+        "id": "id1-basic",
+        "score": 100.0
+      }
+    ],
+    "mismatch_ids": []
+  }
+}

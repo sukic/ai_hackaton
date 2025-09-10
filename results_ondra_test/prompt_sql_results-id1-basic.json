@@ -1,0 +1,1323 @@
+{
+  "meta": {
+    "operations": [],
+    "duration": 0.0025169849395751953
+  },
+  "prompt": {
+    "prompt_text": "Show the number of branches in each municipality.",
+    "prompt_type": "basic"
+  },
+  "results": {
+    "sql": "SELECT name_own, COUNT(*) AS number_of_branches\nFROM all_branches_1\nGROUP BY name_own\nORDER BY number_of_branches DESC;",
+    "data": [
+      {
+        "name_own": "Coop Jednota",
+        "number_of_branches": 1360
+      },
+      {
+        "name_own": "Hruska",
+        "number_of_branches": 569
+      },
+      {
+        "name_own": "Penny Market",
+        "number_of_branches": 407
+      },
+      {
+        "name_own": "Coop TUTY",
+        "number_of_branches": 362
+      },
+      {
+        "name_own": "Albert",
+        "number_of_branches": 334
+      },
+      {
+        "name_own": "Billa",
+        "number_of_branches": 251
+      },
+      {
+        "name_own": "Lidl",
+        "number_of_branches": 250
+      },
+      {
+        "name_own": "Coop ",
+        "number_of_branches": 236
+      },
+      {
+        "name_own": "Tesco",
+        "number_of_branches": 185
+      },
+      {
+        "name_own": "Coop Konzum",
+        "number_of_branches": 173
+      },
+      {
+        "name_own": "Coop TIP",
+        "number_of_branches": 155
+      },
+      {
+        "name_own": "JIP",
+        "number_of_branches": 140
+      },
+      {
+        "name_own": "Kaufland",
+        "number_of_branches": 140
+      },
+      {
+        "name_own": "Zabka",
+        "number_of_branches": 126
+      },
+      {
+        "name_own": "Coop Tempo",
+        "number_of_branches": 93
+      },
+      {
+        "name_own": "Coop Trefa",
+        "number_of_branches": 31
+      },
+      {
+        "name_own": "Coop DISKONT",
+        "number_of_branches": 17
+      },
+      {
+        "name_own": "Potraviny CZ",
+        "number_of_branches": 17
+      },
+      {
+        "name_own": "Globus",
+        "number_of_branches": 14
+      },
+      {
+        "name_own": "Makro",
+        "number_of_branches": 13
+      },
+      {
+        "name_own": "Coop Terno",
+        "number_of_branches": 12
+      },
+      {
+        "name_own": "Potraviny",
+        "number_of_branches": 10
+      },
+      {
+        "name_own": "Lapek a.s.",
+        "number_of_branches": 6
+      },
+      {
+        "name_own": "Smíšené zboží",
+        "number_of_branches": 5
+      },
+      {
+        "name_own": "Minimarket",
+        "number_of_branches": 3
+      },
+      {
+        "name_own": "Smíšené zboží Kysilková",
+        "number_of_branches": 2
+      },
+      {
+        "name_own": "Smíšené zboží U Hájků",
+        "number_of_branches": 2
+      },
+      {
+        "name_own": "Nákupní středisko Vladimíra Červová",
+        "number_of_branches": 2
+      },
+      {
+        "name_own": "Potraviny Petr Kroupa",
+        "number_of_branches": 2
+      },
+      {
+        "name_own": "Jana Čtveráčková",
+        "number_of_branches": 2
+      },
+      {
+        "name_own": "Potraviny Mandík",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Šach s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Zenáhlík",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Marie Polehlová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny U Kolářů s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny DUHA, Dagmar Kubištová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dolní Kralovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Strmilov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Hodonín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Třešť",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jihlava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Chýnov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Hluboká nad Vltavou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Benešov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nový Bor",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Vracov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Pyšel",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Brno - BYSTRC",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny U Davida",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Minimarket Bratčice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšenka u Anežky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Bernartice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Včelná",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Březnice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Písek",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Plzeň, Kaznějovská",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Dítko",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Hejkal",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Struhařov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Frýdek-Místek J. Trnky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Horní Planá",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Borovany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Slatiňany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Skuteč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Litoměřice - Pokratická",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Třinec - Nový Borek",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Hladíková",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Centrum Potraviny CZ",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny na Zatáčce",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Lipník",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Večerka U kina",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Merkur Třeboň",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Počátky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží PELEGRIN",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Pelech",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Malý Zdeněk",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Štítary",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Čížová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Čechtice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Brno - Černá Pole",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Moravské Budějovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Mirotice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "TN Potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Zlata Štamfrová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny U Hřiště",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Šumavské Hoštice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Zárubnice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží JV s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Štěpán",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Mini potraviny J&E Smrček J.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Hroděj s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Suchdol nad Lužnicí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dubá",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Sedlec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Pacov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Litoměřice Komenského",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Koloveč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny 29",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Večerka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží U Hanky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Křižanov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšenka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Turnov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Štěpánovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Znojmo",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "BM Market",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "SENFT P+P",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Bělíková Miroslava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "V-Market",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Prodejna IVA",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny STAPEVA s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Třebíč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Bystřice nad Pernštejnem",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Odolena Voda",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nová Včelnice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Lidečko",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nové Hrady",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Volyně",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "HD potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Husinec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Konzum Hama market",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny - večerka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Zuzky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Family Market",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Vyškov, Na Hraničkách",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Příšovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žirovnice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žandov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny OR.89 s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny PRIMA - PRIMAP s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Zámečník",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Třinec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dubňany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dvůr Králové",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny K+K",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Koloniál Katovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Prodejana potravin Mělčany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Stará Říše",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Minimarket H&H",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Marcela Herclíková - Maso - Uzeniny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny - Zbraslav",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Kolín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Plzeň, náměstí Republiky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Poběžovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Praha-Modřany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Majka-Jana Pavelková",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Pavel Chábera",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Nápoje Výrosta",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Stráž pod Ralskem",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Sezimovo Ústí II.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Mukařov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Lhenice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jablonec nad Nisou Mánesova",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Pelhřimov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Flop Diskont Volyně",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Michaela Nováková",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny David",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Minimarket Petr Ostrý",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Topolová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Toni's Market",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Popovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "FAGUS-smíšené zboží",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Konzum Dítko",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Obchodní dům Pavelec-prům. zboží",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Libor Bratršovský",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Radek Mol",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Chrudim",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Rudolfov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman České Velenice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žďár nad Sázavou, Dolní",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Nebahovy",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Prodejna Střed",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Weber MLÝN",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Phuong Quyen s.r.o",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Tony",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Prostějov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Raušer Miroslav",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Kourková Iva",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Supermarket VZOR, Hejný spol. s r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "DIPA s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny MARTA",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Kónig Vladimír",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Tábor",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Chlumec nad Cidlinou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Chlum u Třeboně",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Litoměřice Stránského",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Český Těšín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Miřetice Polní 681",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Miřetice 17.listopadu",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Vimperk Weise",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Vyškov, Lípová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Zliv",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Votice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Zdice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Petra Pham",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Daily shop",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Mimimarket V podzámčí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží ZD Lukavec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Tauchman",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Temelín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží - Anna Novotná",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Valter František",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Z.Vokoun",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Janáčová Sandra Ing.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jablonec nad Nisou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Mladá Boleslav",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Blovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Třinec - Lyžbice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Ořechovka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Sluníčko",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny CZ Hosín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Obecní obchod Lidmaň",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Bohunky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Kostků",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Jindrák",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Extra Třeboň",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Vladimír Kónig",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "UNIPRO s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dražice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jičín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nehvizdy",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Mnichovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Kunice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žacléř",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Nahodilová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Veselí nad Lužnicí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Velké Popovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Karásek, Silvie Vodičková",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny RUBL s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Chalupa Jr.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny TRIO",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Horní Cerekev",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jevany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Sedlčany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Neveklov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nechanice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žatec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jemnice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nové Strašecí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny pod kaštany",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Fiala Vlastimil",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Kaňka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Havlíčkův Brod Reynkova",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Český Brod",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman České Budějovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jevišovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Drogerie Flosman Jevišovice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Luka nad Jihlavou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Lišov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Kralupy nad Vltavou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Batelov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Netolice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Hradiště",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Večerka Loi Chu Van",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží u Hájků",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Lažiště - p.Hodina",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Skalický",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Myslivce",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Karásek Petr",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Příbram",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Pekárna Velíšek s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Čiperová Jaroslava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Frymburk",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Havlíčkův Brod, Havířská",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Sázava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Velká Bíteš",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nový Rychnov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Nový Bydžov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Van Potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "HT Expres",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Pravonín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Slunce",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Heřmanov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Krhanice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny - Smíšené zboží",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Tulešice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Žlutava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny a Pekárna Pohořelice s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Polná",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Prodejna JAWA",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "A.T.G. Centrum spol.s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Studená",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Horní Lideč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Holýšov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jablonné v Podještědí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Březí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Frýdek-Místek, Dobrovského",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Sehradice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Supermarket FLOP TOP Hrušovany nad Jevišovkou",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Lomnice nad Lužnicí",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Ždánice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "BRASSICA - PAP",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Sura",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Smilkov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Cukrárna- potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Želetava",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Uran",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Protivín",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Jindřichův Hradec",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Kardašova Řečice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšené zboží Strnadová",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Vyskočil",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Trom",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Smíšenka Branice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Soutice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Holašovský koloniál",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Unispol Jana Dvořáková",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Pekárna",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Konzum Zaječov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Telč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Kaplice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Jansáku, s.r.o.",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Straka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Stříbrná Skalice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Smržovka",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dubné",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Teplá",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Dačice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Tišnov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Česká Lípa",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Tlumačov",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Mladá Vožice",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny Flosman Přelouč",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "ESO 2. Potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "HD Potraviny",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Mirky",
+        "number_of_branches": 1
+      },
+      {
+        "name_own": "Potraviny u Hoanga",
+        "number_of_branches": 1
+      }
+    ]
+  }
+}

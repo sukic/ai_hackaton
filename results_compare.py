@@ -219,7 +219,7 @@ def main():
     if results:
         avg_ai = statistics.mean(r["ai_duration"] for r in results)
         avg_ctrl = statistics.mean(r["ctrl_duration"] for r in results)
-        print(f"\nPrůměrná doba běhu AI: {avg_ai:.2f}s vs Control: {avg_ctrl:.2f}s")
+        print(f"\nPrůměrná doba běhu AI: {avg_ai:.5f}s vs Control: {avg_ctrl:.5f}s")
 
     # --- 3️⃣ Výpočet data_match_score a uložení detailů do JSON ---
     details_output = {}
@@ -239,6 +239,31 @@ def main():
     with open("results_details.json", "w", encoding="utf-8") as f:
         json.dump(details_output, f, indent=2, ensure_ascii=False)
 
+    # --- souhrnný report pro JSON ---
+    avg_data_score = sum(d["data_match_score"] for d in details_output.values()) / len(details_output)
+    sorted_scores = sorted(details_output.items(), key=lambda x: x[1]["data_match_score"], reverse=True)
+
+    summary_json = {
+        "total_prompts": total,
+        "correct_total": correct_total,
+        "correct_percentage": correct_total / total * 100 if total else 0,
+        "avg_ai_duration": avg_ai,
+        "avg_ctrl_duration": avg_ctrl,
+        "categories": {cat: sum(vals)/len(vals) for cat, vals in categories.items()},
+        "data_match": {
+            "average_score": avg_data_score,
+            "top5_best": [{"id": qid, "score": det["data_match_score"]} for qid, det in sorted_scores[:5]],
+            "top5_worst": [{"id": qid, "score": det["data_match_score"]} for qid, det in sorted_scores[-5:]],
+            "mismatch_ids": mismatch_ids
+        }
+    }
+
+    # --- uložíme souhrnný report ---
+    with open("summary_output.json", "w", encoding="utf-8") as f:
+        json.dump(summary_json, f, indent=2, ensure_ascii=False)
+    
+    
+    
     # --- 4️⃣ Souhrnný report do stdout ---
     print("\nCelková statistika datové shody:")
     avg_score = sum(d["data_match_score"] for d in details_output.values()) / len(details_output)

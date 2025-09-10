@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "operations": [],
+    "duration": 0.004469633102416992
+  },
+  "prompt": {
+    "prompt_text": "How many branches are there in each municipality? Please return the result as a clear table with the municipality name and the corresponding number of branches.",
+    "prompt_type": "analytical"
+  },
+  "results": {
+    "sql": "SELECT ob.nazev AS municipality_name, COUNT(ab.id) AS number_of_branches\nFROM all_branches_1 ab\nJOIN zsj_dwh_1 zsj ON ab.kod_zsj_d = zsj.kod_zsj\nJOIN obec_dwh_1 ob ON zsj.kod_obec = ob.kod_obec\nGROUP BY ob.nazev\nORDER BY ob.nazev;",
+    "data": []
+  }
+}
