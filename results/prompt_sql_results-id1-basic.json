@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "operations": ["join", "aggregate", "filter_fact","filter_dim"],
+        "duration": 5
+    },
+    "prompt":
+        {
+            "prompt_text": "Show the number of branches in each municipality.",
+            "prompt_type": "basic"
+        },
+    "results": 
+        {
+            "sql": "",
+            "data": [
+                {
+                    "obec.nazev": "Davle",
+                    "value": "2356"
+                },
+                {
+                    "obec.nazev": "Litomyšl",
+                    "value": "10000"
+                }
+            ]   
+        }
+    }

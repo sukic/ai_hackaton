@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "operations": ["join", "aggregate", "filter_fact","filter_dim"],
+        "duration": 5
+    },
+    "prompt":
+        {
+            "prompt_text": "Provide an overview of branch distribution across municipalities. List each municipality along with the number of branches operating there.",
+            "prompt_type": "business"
+        },
+    "results": 
+        {
+            "sql": "",
+            "data": [
+                {
+                    "obec.nazev": "Davle",
+                    "value": "2499"
+                },
+                {
+                    "obec.nazev": "Litomyšl",
+                    "value": "9999"
+                }
+            ]   
+        }
+    }
