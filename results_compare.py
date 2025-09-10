@@ -63,19 +63,27 @@ def text_stats(ai_values, ctrl_values):
 
 def compare_data(ai_data, ctrl_data):
     # === 1. základní kontrola ===
+    rowcount_ai = len(ai_data)
+    rowcount_ctrl = len(ctrl_data)
     if not ai_data or not ctrl_data:
-        return {"same_columns": False, "same_rowcount": False, "columns": {}, "rowcount_ai": len(ai_data), "rowcount_ctrl": len(ctrl_data)}
+        return {
+            "same_columns": False,
+            "same_rowcount": False,
+            "rowcount_ai": rowcount_ai,
+            "rowcount_ctrl": rowcount_ctrl,
+            "columns": {}
+        }
     
     ai_cols = set(ai_data[0].keys())
     ctrl_cols = set(ctrl_data[0].keys())
     same_columns = ai_cols == ctrl_cols
-    same_rowcount = len(ai_data) == len(ctrl_data)
+    same_rowcount = rowcount_ai == rowcount_ctrl
     
     results = {
         "same_columns": same_columns,
         "same_rowcount": same_rowcount,
-        "rowcount_ai": len(ai_data),
-        "rowcount_ctrl": len(ctrl_data),
+        "rowcount_ai": rowcount_ai,
+        "rowcount_ctrl": rowcount_ctrl,
         "columns": {}
     }
     
@@ -84,10 +92,9 @@ def compare_data(ai_data, ctrl_data):
         ai_values = [row[col] for row in ai_data if col in row]
         ctrl_values = [row[col] for row in ctrl_data if col in row]
         
-        # Zkusíme převést na čísla
-        ai_nums = []
-        ctrl_nums = []
+        # pokus převést na čísla
         numeric = True
+        ai_nums, ctrl_nums = [], []
         for v in ai_values:
             try:
                 ai_nums.append(float(v))
@@ -100,7 +107,7 @@ def compare_data(ai_data, ctrl_data):
             except:
                 numeric = False
                 break
-        
+                
         if numeric:
             stats = {
                 "ai": numeric_stats(ai_nums),
@@ -112,6 +119,35 @@ def compare_data(ai_data, ctrl_data):
         results["columns"][col] = stats
     
     return results
+
+def compute_data_match_score(details):
+    """
+    Vrátí procento shody dat mezi AI a Control.
+    - Číselné sloupce: 100% pokud min, max, median, avg jsou velmi blízko, jinak sníženo podle rozdílu
+    - Textové sloupce: overlap_ratio * 100
+    """
+    if not details or "columns" not in details:
+        return 0.0
+
+    scores = []
+    for col, stats in details["columns"].items():
+        if stats is None:
+            continue
+        # číselné
+        if "ai" in stats and stats["ai"] is not None:
+            ai_vals = stats["ai"]
+            ctrl_vals = stats["ctrl"]
+            # jednoduchý přístup: průměrný rozdíl v %
+            diffs = []
+            for key in ["min", "q1", "median", "q3", "max", "avg"]:
+                if key in ai_vals and key in ctrl_vals and ctrl_vals[key] != 0:
+                    diffs.append(abs(ai_vals[key] - ctrl_vals[key]) / ctrl_vals[key])
+            score = max(0, 100 - (sum(diffs)/len(diffs)*100)) if diffs else 100
+        else:  # textové
+            score = stats.get("overlap_ratio", 0.0) * 100
+        scores.append(score)
+    
+    return sum(scores)/len(scores) if scores else 0.0
 
 def main():
     files = os.listdir(DATA_DIR)
@@ -164,7 +200,7 @@ def main():
 
             categories[ptype].append(correct)
 
-    # === Report ===
+    # === Report a detailní výstup do JSON ===
     total = len(results)
     if total == 0:
         print("⚠️ Žádné výsledky po aplikaci filtru operations.")
@@ -179,25 +215,50 @@ def main():
         acc = sum(vals) / len(vals)
         print(f" - {cat}: {acc:.0%}")
 
+    # --- 2️⃣ Průměrná doba běhu ---
     if results:
         avg_ai = statistics.mean(r["ai_duration"] for r in results)
         avg_ctrl = statistics.mean(r["ctrl_duration"] for r in results)
         print(f"\nPrůměrná doba běhu AI: {avg_ai:.2f}s vs Control: {avg_ctrl:.2f}s")
 
-    # --- 2️⃣ Statistická analýza (detaily z compare_data) ---
-    print("\nStatistická analýza (detaily sloupců):")
+    # --- 3️⃣ Výpočet data_match_score a uložení detailů do JSON ---
+    details_output = {}
+    mismatch_ids = []
+
     for r in results:
-        print(f"\nQID: {r['qid']} | Prompt type: {r['prompt_type']}")
-        for col, stats in r["details"]["columns"].items():
-            print(f"  Sloupec: {col}")
-            if stats is None:
-                print("    (žádné hodnoty)")
-                continue
-            if "ai" in stats and stats["ai"] is not None:  # číselné
-                print(f"    AI: {stats['ai']}")
-                print(f"    Control: {stats['ctrl']}")
-            else:  # textové
-                print(f"    Text stats: {stats}")
+        qid_type = f"{r['qid']}-{r['prompt_type']}"
+        data_score = compute_data_match_score(r["details"])
+        
+        # uložíme detaily + data_match_score
+        details_output[qid_type] = {**r["details"], "data_match_score": data_score}
+        
+        if not r["correct"]:
+            mismatch_ids.append(qid_type)
+
+    # uložíme do souboru
+    with open("results_details.json", "w", encoding="utf-8") as f:
+        json.dump(details_output, f, indent=2, ensure_ascii=False)
+
+    # --- 4️⃣ Souhrnný report do stdout ---
+    print("\nCelková statistika datové shody:")
+    avg_score = sum(d["data_match_score"] for d in details_output.values()) / len(details_output)
+    print(f"Průměrná shoda dat: {avg_score:.1f}%")
+
+    # TOP 5 nejlepších a nejhorších
+    sorted_scores = sorted(details_output.items(), key=lambda x: x[1]["data_match_score"], reverse=True)
+    print("\nTOP 5 nejlepších ID:")
+    for qid, det in sorted_scores[:5]:
+        print(f"  {qid}: {det['data_match_score']:.1f}%")
+    print("\nTOP 5 nejhorších ID:")
+    for qid, det in sorted_scores[-5:]:
+        print(f"  {qid}: {det['data_match_score']:.1f}%")
+
+    # ID s nesedící strukturou
+    if mismatch_ids:
+        print("\nID s nesedící strukturou (sloupce/řádky):")
+        for qid in mismatch_ids:
+            print(f"  {qid}")
+
 
 
 if __name__ == "__main__":
