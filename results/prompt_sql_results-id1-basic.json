@@ -19,6 +19,10 @@
                 {
                     "obec.nazev": "Litomyšl",
                     "value": "10000"
+                },
+                {
+                    "obec.nazev": "Semily",
+                    "value": "13000"
                 }
             ]   
         }

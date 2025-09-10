@@ -1,0 +1,146 @@
+{
+  "id1-analytical": {
+    "same_columns": true,
+    "same_rowcount": true,
+    "rowcount_ai": 2,
+    "rowcount_ctrl": 2,
+    "columns": {
+      "value": {
+        "ai": {
+          "count": 2,
+          "min": 2430.0,
+          "q1": 4322.5,
+          "median": 6215.0,
+          "q3": 8107.5,
+          "max": 10000.0,
+          "avg": 6215.0,
+          "std": 3785.0
+        },
+        "ctrl": {
+          "count": 2,
+          "min": 2500.0,
+          "q1": 4375.0,
+          "median": 6250.0,
+          "q3": 8125.0,
+          "max": 10000.0,
+          "avg": 6250.0,
+          "std": 3750.0
+        }
+      },
+      "obec.nazev": {
+        "ai_unique": 2,
+        "ctrl_unique": 2,
+        "overlap_ratio": 1.0
+      }
+    },
+    "data_match_score": 99.55538461538461
+  },
+  "id1-business": {
+    "same_columns": true,
+    "same_rowcount": true,
+    "rowcount_ai": 2,
+    "rowcount_ctrl": 2,
+    "columns": {
+      "value": {
+        "ai": {
+          "count": 2,
+          "min": 2499.0,
+          "q1": 4374.0,
+          "median": 6249.0,
+          "q3": 8124.0,
+          "max": 9999.0,
+          "avg": 6249.0,
+          "std": 3750.0
+        },
+        "ctrl": {
+          "count": 2,
+          "min": 2500.0,
+          "q1": 4375.0,
+          "median": 6250.0,
+          "q3": 8125.0,
+          "max": 10000.0,
+          "avg": 6250.0,
+          "std": 3750.0
+        }
+      },
+      "obec.nazev": {
+        "ai_unique": 2,
+        "ctrl_unique": 2,
+        "overlap_ratio": 1.0
+      }
+    },
+    "data_match_score": 99.99023626373626
+  },
+  "id1-technical": {
+    "same_columns": true,
+    "same_rowcount": true,
+    "rowcount_ai": 2,
+    "rowcount_ctrl": 2,
+    "columns": {
+      "value": {
+        "ai": {
+          "count": 2,
+          "min": 2500.0,
+          "q1": 4375.0,
+          "median": 6250.0,
+          "q3": 8125.0,
+          "max": 10000.0,
+          "avg": 6250.0,
+          "std": 3750.0
+        },
+        "ctrl": {
+          "count": 2,
+          "min": 2500.0,
+          "q1": 4375.0,
+          "median": 6250.0,
+          "q3": 8125.0,
+          "max": 10000.0,
+          "avg": 6250.0,
+          "std": 3750.0
+        }
+      },
+      "obec.nazev": {
+        "ai_unique": 2,
+        "ctrl_unique": 2,
+        "overlap_ratio": 1.0
+      }
+    },
+    "data_match_score": 100.0
+  },
+  "id1-basic": {
+    "same_columns": true,
+    "same_rowcount": false,
+    "rowcount_ai": 3,
+    "rowcount_ctrl": 2,
+    "columns": {
+      "value": {
+        "ai": {
+          "count": 3,
+          "min": 2356.0,
+          "q1": 6178.0,
+          "median": 10000.0,
+          "q3": 11500.0,
+          "max": 13000.0,
+          "avg": 8452.0,
+          "std": 4481.139140888174
+        },
+        "ctrl": {
+          "count": 2,
+          "min": 2500.0,
+          "q1": 4375.0,
+          "median": 6250.0,
+          "q3": 8125.0,
+          "max": 10000.0,
+          "avg": 6250.0,
+          "std": 3750.0
+        }
+      },
+      "obec.nazev": {
+        "ai_unique": 3,
+        "ctrl_unique": 2,
+        "overlap_ratio": 1.0
+      }
+    },
+    "data_match_score": 82.18817582417583
+  }
+}
